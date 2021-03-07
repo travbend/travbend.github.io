@@ -109,7 +109,7 @@ body {
 #footer {
 	width: 100%;
 	background-color: #8F8A3A30;
-	clear: both;
+	/*clear: both;*/
     padding-left: 10px;
     padding-right: 10px;
     margin-left: -10px;
@@ -120,18 +120,53 @@ body {
     left: 0;
     right: 0;
 }
+
+#rightFoot {
+    display: inline;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#rightDiv {
+    text-align: center;
+    width: 100%;
+}
+
 .footerText {
     font-family: Raleway;
+    font-weight: bold;
     color: #8F8A3AA6;
     text-align: center;
     padding: 30px;
-    font-size 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size 75px;
 /*    margin-left: -10px;*/
 /*    margin-bottom: -10px;*/
 /*    margin-right: -10px;*/
 /*    background-color: #8F8A3A30;*/
-    clear: both;
+    /*clear: both;*/
 }
+
+.rightFootText {
+    font-family: Raleway;
+    color: #8F8A3AA6;
+/*    text-align: center;*/
+    padding: 5px;
+    padding-top: 15px;
+    font-size 30px;
+    display: inline;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: #8F8A3AA6;
+}
+
+.footerLink:hover {
+    color: #8F8A3AF2;
+}
+
 /*div>p {*/
 /*	left: 0;*/
 /*	top: 50%;*/
