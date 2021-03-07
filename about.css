@@ -1,0 +1,231 @@
+.ulnavbar {
+    top: 0;
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+/*    margin-top: -10px;*/
+/*    margin-left: -10px;*/
+/*    margin-bottom: 100px;*/
+/*	overflow: hidden;*/
+	background-color: #FFFFFF;
+	width: 100%;
+    height: 80px;
+	position: fixed;
+/*	z-index: 1;*/
+/*    box-shadow: 0px 5px 5px #F5F5F5;*/
+    box-shadow: 0px 1px 1px #F5F5F5;
+/*    box-shadow: 0px 1px 1px #bebebe;*/
+}
+.tableimg:hover {
+	opacity: 0.5;
+}
+
+.linavbar:hover:not(.active) {
+	background-color: #8F8A3A30;
+}
+.aTitle {
+    display: block;
+    color: white;
+    font-family: Bodoni Moda;
+    font-size: 40px;
+    text-align: center;
+    color: #8F8A3AA6;
+    margin: 0;
+    margin-right: 20px;
+    padding: 10px;
+    padding-left: 30px;
+/*    padding-top: 20px;*/
+/*    margin-top: -10px;*/
+    text-decoration: none;
+    height: 100%;
+}
+.linavbar {
+	display: block;
+	color: white;
+	font-family: Bodoni Moda;
+    font-size: 40px;
+/*	text-align: center;*/
+    margin: 0;
+/*	padding: 20px;*/
+/*	padding-top: 30px;*/
+/*	margin-top: -10px;*/
+	text-decoration: none;
+    height: 100%;
+    float:left;
+}
+.anavbar {
+    display: block;
+    color: white;
+    font-family: Raleway;
+    font-size: 25px;
+/*    color: #3A8F5CAD;*/
+    color: #8F8A3AA6;
+    text-align: center;
+    margin:0;
+    padding: 30px;
+/*    padding-top: 30px;*/
+/*    padding-bottom: 20px;*/
+/*    height: 100%;*/
+/*    margin-top: -10px;*/
+    text-decoration: none;
+    height: 100%;
+}
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+
+#divBody {
+    margin-top: 0;
+    left:0;
+    right:0;
+}
+#main {
+    background-image: url('/images/Picture.jpg');
+    background-size: cover;
+    margin:0;
+}
+
+#bodyDiv {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #478F3A4F;
+}
+
+#accentText {
+    font-family: Bodoni Moda;
+    color: #8F8A3AA6;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titleText {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+
+.bodyText {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+#pText {
+    height: 800px;
+}
+#textBox {
+    padding-top: 250px;
+}
+#text {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-family: Bodoni Moda;
+    text-align: center;
+    font-size: 130px;
+    /*padding-top: 250px;*/
+    background-color: #121C05;
+}
+#picture {
+    width: 100%;
+    
+}
+
+#profileDiv {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 700px;
+}
+
+#circleDiv {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8F8A3A30;
+    height: 200px;
+    width: 200px;
+}
+
+#footer {
+	max-width: 100%;
+	background-color: #8F8A3A30;
+	/*clear: both;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#rightFoot {
+    display: inline;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#rightDiv {
+    text-align: center;
+    width: 100%;
+}
+
+.footerText {
+    font-family: Raleway;
+    font-weight: bold;
+    color: #8F8A3AA6;
+    text-align: center;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size 75px;
+/*    margin-left: -10px;*/
+/*    margin-bottom: -10px;*/
+/*    margin-right: -10px;*/
+/*    background-color: #8F8A3A30;*/
+    /*clear: both;*/
+}
+
+.rightFootText {
+    font-family: Raleway;
+    color: #8F8A3AA6;
+/*    text-align: center;*/
+    padding: 5px;
+    padding-top: 15px;
+    font-size 30px;
+    display: inline;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: #8F8A3AA6;
+}
+
+.footerLink:hover {
+    color: #8F8A3AF2;
+}
+
+/*div>p {*/
+/*	left: 0;*/
+/*	top: 50%;*/
+/*	width: 100%;*/
+/*	text-align: center;*/
+/*	font-size: 18px;*/
+/*	padding-top: 25px;*/
+/*}*/
