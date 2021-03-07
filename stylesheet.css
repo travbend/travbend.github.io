@@ -87,14 +87,20 @@ body {
 #pText {
     height: 800px;
 }
+#textBox {
+    padding-top: 250px;
+}
 #text {
-    margin-left: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
     margin-top: 0px;
     color: #FFFFFF;
     font-family: Bodoni Moda;
     text-align: center;
     font-size: 130px;
-    padding-top: 250px;
+    /*padding-top: 250px;*/
+    background-color: #121C05;
 }
 #picture {
     width: 100%;
