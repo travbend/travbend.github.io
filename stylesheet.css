@@ -84,6 +84,50 @@ body {
     background-size: cover;
     margin:0;
 }
+
+#bodyDiv {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#accentText {
+    font-family: Bodoni Moda;
+    color: #8F8A3AA6;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titleText {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+
+.bodyText {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+#textLink {
+    color: #8F8A3AA6;
+    text-decoration: none;
+}
+
+#textLink:hover {
+    text-decoration: underline;
+}
+
 #pText {
     height: 800px;
 }
