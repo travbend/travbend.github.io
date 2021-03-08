@@ -94,7 +94,6 @@ body {
     padding-right: 10px;
     margin-left: -10px;
     margin-right: -10px;
-    background-color: #478F3A4F;
 }
 
 #accentText {
@@ -158,13 +157,14 @@ body {
     background-image: '/images/Picture.jpg';
     height: 200px;
     width: 200px;
+    border: 5px solid white;
 }
 
-/*#profileImage {*/
-/*    height: 200px;*/
-/*    width: 200px;*/
-/*    border-radius: 50%;*/
-/*}*/
+#profileImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
 #footer {
 	max-width: 100%;
