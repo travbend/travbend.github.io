@@ -5,25 +5,31 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Travis Bender - Home</title>
 	</head>
 	<body>
-        <ul class = "ulnavbar">
-            <li class = "linavbar"><a class = "aTitle" href = "/index.html"><strong>Travis Bender</strong></a></li>
-            <li class = "linavbar"><a class = "anavbar" href = "/about.html">About Me</a></li>
-            <li class = "linavbar"><a class = "anavbar" href = "">Posts</a></li>
-        </ul>
+        <div class = "divnavbar" id="dnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class = "aTitle" href = "/index.html"><strong>Travis Bender</strong></a>
+            <a class = "anavbar" href = "/about.html">About Me</a>
+            <a class = "anavbar" href = "">Posts</a>
+        </div>
         <div id="divBody">
 <!--            <img id="picture" src="Picture.jpg" alt="The Fells">-->
             <div id="main">
                 <div id="pText">
+                    <div id="leftBox"></div>
                     <div id="textBox">
-                        <p id="text">Hello There,</p>
+                        <p id="text">Hello <br>There,</p>
                     </div>
+                    <div id="rightBox"></div>
                 </div>
             </div>
             <div id="bodyDiv">
-                <p class="titleText"><span id="accentText">Welcome, </span> I am glad you stopped by. &nbsp;Feel free to take a look around and learn a little more about me <a id="textLink" href="/about.html">here</a>.</p>
+                <p class="titleText"><span id="accentText">Welcome, </span> I am glad you stopped by.&nbsp; <br class="titleBr"><br class="titleBr">Feel free to take a look around and learn a little more about me <a id="textLink" href="/about.html">here</a>.</p>
             </div>
             <div id="footer">
                 <div id="leftFoot">
@@ -38,6 +44,16 @@
                 </div>
             </div>
         </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("dnav");
+          if (x.className === "divnavbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "divnavbar";
+          }
+        }
+        </script>
 	</body>
 
 </html>
