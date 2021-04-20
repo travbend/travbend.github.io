@@ -3,18 +3,21 @@
 <html>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bodoni+Moda|Raleway:Thin">
 	<head>
-		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="about.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="about2.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Travis Bender - Home</title>
 	</head>
 	<body>
-        <ul class = "ulnavbar">
-            <li class = "linavbar"><a class = "aTitle" href = "/index.html"><strong>Travis Bender</strong></a></li>
-            <li class = "linavbar"><a class = "anavbar" href = "/about.html">About Me</a></li>
-            <li class = "linavbar"><a class = "anavbar" href = "">Posts</a></li>
-        </ul>
+        <div class = "divnavbar" id="dnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class = "aTitle" href = "/index.html"><strong>Travis Bender</strong></a>
+            <a class = "anavbar" href = "/about.html">About Me</a>
+            <a class = "anavbar" href = "">Posts</a>
+        </div>
         <div id="divBody">
-<!--            <img id="picture" src="Picture.jpg" alt="The Fells">-->
             <div id="profileDiv">
                 <div id="circleDiv">
                     <img id="profileImage" src="/images/Profile.jpg">
@@ -22,9 +25,11 @@
             </div>
             <div id="main">
                 <div id="pText">
+                    <div id="leftBox"></div>
                     <div id="textBox">
-                        <p id="text">About Me</p>
+                        <p id="text">About <br>Me</p>
                     </div>
+                    <div id="rightBox"></div>
                 </div>
             </div>
             <div id="bodyDiv">
@@ -46,6 +51,16 @@
                 </div>
             </div>
         </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("dnav");
+          if (x.className === "divnavbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "divnavbar";
+          }
+        }
+        </script>
 	</body>
 
 </html>
