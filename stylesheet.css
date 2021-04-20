@@ -1,98 +1,76 @@
-.ulnavbar {
-    top: 0;
-	list-style-type: none;
-	margin: 0;
-    padding: 0;
-/*    margin-top: -10px;*/
-/*    margin-left: -10px;*/
-/*    margin-bottom: 100px;*/
-/*	overflow: hidden;*/
-	background-color: #FFFFFF;
-	width: 100%;
-    height: 80px;
-	position: fixed;
-/*	z-index: 1;*/
-/*    box-shadow: 0px 5px 5px #F5F5F5;*/
-    box-shadow: 0px 1px 1px #F5F5F5;
-/*    box-shadow: 0px 1px 1px #bebebe;*/
-}
-.tableimg:hover {
-	opacity: 0.5;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.linavbar:hover:not(.active) {
-	background-color: #8F8A3A30;
+.divnavbar .icon {
+    display: none;
+    z-index: 1;
+    padding: 20px;
 }
-.aTitle {
-    display: block;
-    color: white;
+
+.divnavbar a.aTitle {
+    color: #8F8A3AA6;
     font-family: Bodoni Moda;
     font-size: 40px;
-    text-align: center;
-    color: #8F8A3AA6;
-    margin: 0;
-    margin-right: 20px;
-    padding: 10px;
-    padding-left: 30px;
-/*    padding-top: 20px;*/
-/*    margin-top: -10px;*/
-    text-decoration: none;
-    height: 100%;
-}
-.linavbar {
-	display: block;
-	color: white;
-	font-family: Bodoni Moda;
-    font-size: 40px;
-/*	text-align: center;*/
-    margin: 0;
-/*	padding: 20px;*/
-/*	padding-top: 30px;*/
-/*	margin-top: -10px;*/
-	text-decoration: none;
-    height: 100%;
-    float:left;
-}
-.anavbar {
     display: block;
-    color: white;
-    font-family: Raleway;
-    font-size: 25px;
-/*    color: #3A8F5CAD;*/
-    color: #8F8A3AA6;
-    text-align: center;
-    margin:0;
-    padding: 30px;
-/*    padding-top: 30px;*/
-/*    padding-bottom: 20px;*/
-/*    height: 100%;*/
-/*    margin-top: -10px;*/
-    text-decoration: none;
-    height: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    height: 80px;
 }
-body {
-    margin:0;
+.divnavbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
 }
 
-#divBody {
-    margin-top: 0;
-    left:0;
-    right:0;
+.divnavbar a:hover:not(.active) {
+/*    background-color: #8F8A3A30;*/
+    background-color: #EAE9DC;
 }
+
+.divnavbar a {
+    color: #8F8A3AA6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Raleway;
+    font-size: 25px;
+    background-color: white;
+}
+
+.divnavbar a.anavbar {
+    color: #8F8A3AA6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Raleway;
+    font-size: 25px;
+    background-color: white;
+    float: left;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
 #main {
     background-image: url('/images/Picture.jpg');
     background-size: cover;
-    margin:0;
+/*    height: 700px;*/
 }
 
 #bodyDiv {
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
-    padding: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+/*    background-color: yellow;*/
+    display: block
 }
 
 #accentText {
@@ -106,17 +84,10 @@ body {
     font-family: Raleway;
     color: #212121;
     font-size: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 60px;
-}
-
-.bodyText {
-    font-family: Raleway;
-    color: #212121;
-    font-size: 20px;
-    margin-left: 80px;
-    margin-right: 60px;
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+/*    background-color: blue;*/
 }
 
 #textLink {
@@ -129,21 +100,40 @@ body {
 }
 
 #pText {
-    height: 800px;
+    height: 100%;
 }
+
+#leftBox {
+    width: 10%;
+    height: 100%;
+    display: block;
+    float: left;
+    z-index: 2;
+/*    background-color: blue;*/
+}
+
+#rightBox{
+    width: 10%;
+    height: 100%;
+    display: block;
+    float: left;
+    z-index: 2;
+/*    background-color: blue;*/
+}
+
 #textBox {
-    padding-top: 250px;
+/*    padding-top: 250px;*/
+    width: 80%;
+    display: block;
+    float: left;
 }
 #text {
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 50px;
-    margin-top: 0px;
+/*    padding: 50px;*/
+    margin: 0;
     color: #FFFFFF;
     font-family: Bodoni Moda;
     text-align: center;
     font-size: 130px;
-    /*padding-top: 250px;*/
     background-color: #121C05;
 }
 #picture {
@@ -153,16 +143,8 @@ body {
 #footer {
 	width: 100%;
 	background-color: #8F8A3A30;
-	/*clear: both;*/
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
     padding-top: 20px;
     padding-bottom: 30px;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 #rightFoot {
@@ -181,25 +163,21 @@ body {
     font-weight: bold;
     color: #8F8A3AA6;
     text-align: center;
+    margin: 0;
     padding: 30px;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size 75px;
-/*    margin-left: -10px;*/
-/*    margin-bottom: -10px;*/
-/*    margin-right: -10px;*/
-/*    background-color: #8F8A3A30;*/
-    /*clear: both;*/
 }
 
 .rightFootText {
     font-family: Raleway;
     color: #8F8A3AA6;
-/*    text-align: center;*/
     padding: 5px;
     padding-top: 15px;
     font-size 30px;
     display: inline;
+    margin: 0;
 }
 
 .footerLink {
@@ -211,11 +189,239 @@ body {
     color: #8F8A3AF2;
 }
 
-/*div>p {*/
-/*	left: 0;*/
-/*	top: 50%;*/
-/*	width: 100%;*/
-/*	text-align: center;*/
-/*	font-size: 18px;*/
-/*	padding-top: 25px;*/
+@media screen and (max-width: 350px) {
+    .divnavbar a.anavbar {
+        display: none;
+    }
+    
+    .divnavbar {
+        height: 50px;
+    }
+    
+    .divnavbar a.icon {
+      float: left;
+      display: block;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+    .divnavbar a.aTitle {
+        float: none;
+        text-align: center;
+        font-size: 25px;
+        height: 50px;
+        padding-left: 0px;
+    }
+    
+    #accentText {
+        font-size: 20px;
+    }
+    
+    
+    #main {
+        height: 340px;
+    }
+    
+    #textBox {
+        padding-top: 120px;
+    }
+    
+    #text {
+        font-size: 50px;
+    }
+    
+    .footerText {
+        font-size: 15px;
+    }
+    
+    .rightFootText {
+        font-size: 15px;
+    }
+    .titleText {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+  
+  .divnavbar.responsive a.aTitle {
+      float: none;
+      text-align: center;
+      display: block;
+  }
+  
+  .divnavbar.responsive div.diva {
+      display: block;
+      float: none;
+  }
+  
+  .divnavbar.responsive a.anavbar {
+      float: none;
+      display: block;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 30px;
+      font-size: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 350px) and (max-width: 627px) {
+  .divnavbar a.anavbar {
+      display: none;
+  }
+  
+  .divnavbar {
+      height: 80px;
+  }
+  
+  .divnavbar a.icon {
+    float: left;
+    display: block;
+    padding-bottom: 30px;
+  }
+  .divnavbar a.aTitle {
+      float: none;
+      text-align: center;
+      font-size: 30px;
+      height: 70px;
+  }
+  
+  #main {
+      height: 540px;
+  }
+  
+  #textBox {
+      padding-top: 180px;
+  }
+  
+  #text {
+      font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 627px) {
+  
+  .divnavbar.responsive a.aTitle {
+      float: none;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+  }
+  
+  .divnavbar.responsive div.diva {
+      display: block;
+      float: none;
+  }
+  
+  .divnavbar.responsive a.anavbar {
+      float: none;
+      display: block;
+      text-align: left;
+      padding-top: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 627px) and (max-width: 771px) {
+
+  #textBox {
+      padding-top: 150px;
+      width: 80%
+  }
+  #main {
+      height: 420px;
+  }
+  #text {
+      padding: 50px;
+      font-size: 70px;
+  }
+  #leftBox {
+      width: 10%;
+  }
+  #rightBox {
+      width: 10%;
+  }
+  br {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 880px) {
+
+  #textBox {
+      padding-top: 180px;
+      width: 80%
+  }
+  #main {
+      height: 500px;
+  }
+  #text {
+      padding: 50px;
+      font-size: 90px;
+  }
+  #leftBox {
+      width: 10%;
+  }
+  #rightBox {
+      width: 10%;
+  }
+  br {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 881px) and (max-width: 1207px) {
+
+  #textBox {
+      padding-top: 180px;
+      width: 70%
+  }
+  #main {
+      height: 500px;
+  }
+  #text {
+      padding: 50px;
+      font-size: 90px;
+  }
+  #leftBox {
+      width: 15%;
+  }
+  #rightBox {
+      width: 15%;
+  }
+  br {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1207px) {
+    #textBox {
+        padding-top: 250px;
+        width: 70%
+    }
+    #main {
+        height: 700px;
+    }
+    #text {
+        padding: 50px;
+    }
+    #leftBox {
+        width: 15%;
+    }
+    #rightBox {
+        width: 15%;
+    }
+    br {
+        display: none;
+    }
+}
+
+/*@media screen and (min-width: 1000px) {*/
+/*    #textBox {*/
+/*        padding-top: 230px;*/
+/*    }*/
+/*    #main {*/
+/*        height: 600px;*/
+/*    }*/
 /*}*/
